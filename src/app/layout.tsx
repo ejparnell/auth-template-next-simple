@@ -22,17 +22,14 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang='en'>
+        <html lang="en">
             <Providers>
                 <body className={montserrat.variable}>
                     <section className={styles.navWrapper}>
                         <MessageList />
                     </section>
-                    <section className={styles.mainWrapper}>
-                        {children}
-                    </section>
-                    <section className={styles.footerWrapper}>
-                    </section>
+                    <section className={styles.mainWrapper}>{children}</section>
+                    <section className={styles.footerWrapper}></section>
                 </body>
             </Providers>
         </html>

@@ -67,9 +67,7 @@ export default function Message({ content, type, handleClose }: MessageProps) {
             </div>
 
             <div className={styles.messageContent}>
-                <h3 className={presets.fontSizeHeading}>
-                    {formatTitle(type)}
-                </h3>
+                <h3 className={presets.fontSizeHeading}>{formatTitle(type)}</h3>
 
                 <p className={presets.fontSizeCaption}>
                     {formatContent(content)}
@@ -79,12 +77,12 @@ export default function Message({ content, type, handleClose }: MessageProps) {
             <button className={styles.closeButton} onClick={handleClose}>
                 <Image
                     src={closeIcon}
-                    alt='Close icon'
+                    alt="Close icon"
                     width={closeButtonSize}
                     height={closeButtonSize}
                     onClick={handleClose}
-                    />
+                />
             </button>
         </div>
-    )
+    );
 }

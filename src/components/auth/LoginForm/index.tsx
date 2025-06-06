@@ -117,7 +117,7 @@ export default function LoginForm() {
 
             <button
                 className={presets.submitBtn}
-                type='submit'
+                type="submit"
                 disabled={isPending}
             >
                 {isPending ? 'Logging in...' : 'Log In'}

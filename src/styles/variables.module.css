@@ -2,15 +2,15 @@
     /* Colors */
 
     /* Base Colors */
-    --color-green: #94FFCF;
-    --color-purple: #F6D6FE;
-    --color-blue: #B5F1FF;
-    --color-yellow: #FDFFAB;
-    --color-red: #F8A4A3;
+    --color-green: #94ffcf;
+    --color-purple: #f6d6fe;
+    --color-blue: #b5f1ff;
+    --color-yellow: #fdffab;
+    --color-red: #f8a4a3;
 
     --grey-300: #757575;
-    --grey-200: #E9E9E9;
-    --grey-100: #F4F4F4;
+    --grey-200: #e9e9e9;
+    --grey-100: #f4f4f4;
 
     /* Information Colors */
     --color-success: var(--color-green);
@@ -19,17 +19,17 @@
     --color-warning: var(--color-yellow);
 
     /* Text Colors - Primary */
-    --text-primary:   #1A1A1A;
+    --text-primary: #1a1a1a;
     --text-secondary: #333333;
-    --text-hint:      #555555;
-    --text-inverse:   #FFFFFF;
+    --text-hint: #555555;
+    --text-inverse: #ffffff;
 
     /* Text Colors - Accents */
-    --text-green-accent:  #10745A;
-    --text-purple-accent: #7A3899;
-    --text-blue-accent:   #0D6C91;
-    --text-yellow-accent: #735E00;
-    --text-red-accent:    #B72928;
+    --text-green-accent: #10745a;
+    --text-purple-accent: #7a3899;
+    --text-blue-accent: #0d6c91;
+    --text-yellow-accent: #735e00;
+    --text-red-accent: #b72928;
 
     /* Typography */
 

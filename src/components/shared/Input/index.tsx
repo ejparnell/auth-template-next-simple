@@ -1,4 +1,4 @@
-import Image, { StaticImageData } from "next/image";
+import Image, { StaticImageData } from 'next/image';
 import presets from '@/styles/presets.module.css';
 import styles from './Input.module.css';
 
@@ -33,7 +33,9 @@ export default function Input({
 
     return (
         <div className={styles.inputWrapper}>
-            <label className={presets.fontSizeBody} htmlFor={id}>{displayName}</label>
+            <label className={presets.fontSizeBody} htmlFor={id}>
+                {displayName}
+            </label>
             <input
                 type={type}
                 name={name}
@@ -49,7 +51,7 @@ export default function Input({
             {backIcon && (
                 <Image
                     src={backIcon}
-                    alt='Back icon'
+                    alt="Back icon"
                     width={backIconSize}
                     height={backIconSize}
                 />
@@ -58,14 +60,16 @@ export default function Input({
             {clientErrors.length > 0 && (
                 <div className={styles.errorWrapper}>
                     <p className={presets.fontSizeBody}>Opps! Gotta fix: </p>
-                        {clientErrors.map((error, index) => (
-                            <p className={`${presets.fontSizeCaption} ${styles.errorText}`} key={index}>
-                                {error}
-                            </p>
-                        ))}
+                    {clientErrors.map((error, index) => (
+                        <p
+                            className={`${presets.fontSizeCaption} ${styles.errorText}`}
+                            key={index}
+                        >
+                            {error}
+                        </p>
+                    ))}
                 </div>
             )}
         </div>
-    )
+    );
 }
-             

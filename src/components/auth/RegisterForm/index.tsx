@@ -136,7 +136,7 @@ export default function RegisterForm() {
 
             <button
                 className={presets.submitBtn}
-                type='submit'
+                type="submit"
                 disabled={isPending}
             >
                 {isPending ? 'Creating…' : 'Create account'}
